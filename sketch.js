@@ -43,10 +43,10 @@ mouseRelease = 1;
 function drawPockets(){
 	push();
 	fill(0);
-	ellipse(0,0,30);
+	ellipse(0,0,40);
 	ellipse(0,height/2,30);
-	ellipse(width,0,30);
-	ellipse(width-5,height-5,30);
+	ellipse(width,0,40);
+	ellipse(width,height,40);
 	ellipse(width,height/2,30);
 	ellipse(0,height,40);
 	pop();
@@ -65,7 +65,7 @@ function runBalls(){
 	  				let vel1 = Balls[i].returnVel();
 	  				let vel2 = Balls[j].returnVel();
 	  				if (broke==true){
-	  					Balls[j].selfCollisions(loc1,loc2,vel1,vel2,1);
+	  					//Balls[j].selfCollisions(loc1,loc2,vel1,vel2,1);
 	  					Balls[i].selfCollisions(loc1,loc2,vel1,vel2,-.5);
 	  				}
 	  			}	
