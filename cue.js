@@ -74,10 +74,7 @@ class cue {
 			this.velocity.mult(0);
 			noFill();
 			noStroke();
-			push();
-			fill(255);
-			text("scratch",200,400);
-			pop();
+			displayWords(0);
 			if (frameCount%200==100){
 				this.location.set(200,400);
 				this.scratch=false;
