@@ -14,8 +14,8 @@ function setup(){
 	background(0,100,0);
 	cueBall = new cue;
 	for (var i = 0; i < 15; i++) {
-	 Balls[i] = new Ball;
-	 img[i] = loadImage(ballImages[i]); 
+		Balls[i] = new Ball;
+		img[i] = loadImage(ballImages[i]); 
 	}
 
 }
@@ -59,14 +59,14 @@ function runBalls(){
 			Balls[i].cueCollisions();
 			for (var j = 0; j < Balls.length; j++) {
 				let d = Balls[i].returnLoc().dist(Balls[j].returnLoc());
-	  			if (d<26 && i != j){
+	  			if (d<26){
 	  				let loc1 = Balls[i].returnLoc();
 	  				let loc2 = Balls[j].returnLoc();
 	  				let vel1 = Balls[i].returnVel();
 	  				let vel2 = Balls[j].returnVel();
-	  				if (broke==true){
-	  					//Balls[j].selfCollisions(loc1,loc2,vel1,vel2,1);
-	  					Balls[i].selfCollisions(loc1,loc2,vel1,vel2,-.5);
+	  				if (broke==true && i!=j){
+	  					Balls[i].selfCollisions(loc1,loc2,vel1,vel2,1);
+	  					//Balls[j].selfCollisions(loc1,loc2,vel1,vel2,-1);
 	  				}
 	  			}	
 	    	}
@@ -79,7 +79,6 @@ function runBalls(){
 		} else {
 			Balls.splice(i,1);
 			img.splice(i,1);
-
 		}
 	}
 }
