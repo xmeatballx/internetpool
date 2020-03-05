@@ -106,28 +106,28 @@ function runBalls(){
 
 function initWords(){
 	scratch = createWord3D(
-  "SCRATCH!",       // The actual character that you want to draw (anything that can be passed into "text()")
-  20,        // How thick the 3D rendered letter is (i.e. how many cube pixels of size "size" it is on z-axis)  
-  1,         // The size of a unit "box()" making up part of the letter  
-  50,   // The size of the canvas it renders the letter on (higher is more detailed, 20-30 is a good range)         // [OPTIONAL, default = BOLD] Gives the chosen style out of BOLD, NORMAL, ITALIC  
+  "SCRATCH!",      
+  20,        
+  1,         
+  50,    
 )
 	niceshot = createWord3D(
-  "NICE SHOT!",       // The actual character that you want to draw (anything that can be passed into "text()")
-  20,        // How thick the 3D rendered letter is (i.e. how many cube pixels of size "size" it is on z-axis)  
-  1,         // The size of a unit "box()" making up part of the letter  
-  50,   // The size of the canvas it renders the letter on (higher is more detailed, 20-30 is a good range)         // [OPTIONAL, default = BOLD] Gives the chosen style out of BOLD, NORMAL, ITALIC  
+  "NICE SHOT!",      
+  20,        
+  1,          
+  50,   
 )
 	youlose = createWord3D(
-  "YOU LOSE!",       // The actual character that you want to draw (anything that can be passed into "text()")
-  20,        // How thick the 3D rendered letter is (i.e. how many cube pixels of size "size" it is on z-axis)  
-  1,         // The size of a unit "box()" making up part of the letter  
-  50,   // The size of the canvas it renders the letter on (higher is more detailed, 20-30 is a good range)         // [OPTIONAL, default = BOLD] Gives the chosen style out of BOLD, NORMAL, ITALIC  
+  "YOU LOSE!",       
+  20,        
+  1,          
+  50,   
 )
 	youwin = createWord3D(
-  "YOU WIN!",       // The actual character that you want to draw (anything that can be passed into "text()")
-  20,        // How thick the 3D rendered letter is (i.e. how many cube pixels of size "size" it is on z-axis)  
-  1,         // The size of a unit "box()" making up part of the letter  
-  50,   // The size of the canvas it renders the letter on (higher is more detailed, 20-30 is a good range)         // [OPTIONAL, default = BOLD] Gives the chosen style out of BOLD, NORMAL, ITALIC  
+  "YOU WIN!",   
+  20,        
+  1,        
+  50,   
 )
 }
 
