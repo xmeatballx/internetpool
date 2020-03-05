@@ -62,15 +62,12 @@ class Ball{
 		this.ang2.normalize();
 		this.forcas = p5.Vector.sub(factored,this.ang2);
 		this.forcas.normalize();
-		//vel2.add(this.forcas.mult(1.5));
 		vel1.sub(this.forcas.mult(.9));
-		//vel1.normalize();
-		//vel2.normalize();
 		this.forcas.mult(0);
 	}
 
 	update(){
-		this.velocity2.div(1.01);
+		this.velocity2.div(1.03);
 		this.location2.add(this.velocity2);
 	}
 

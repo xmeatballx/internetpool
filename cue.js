@@ -7,7 +7,7 @@ class cue {
 		this.lineEnd = createVector(0,0);
 		this.mass=.5;
 		this.forceCreated = false;
-		this.friction=1.01;
+		this.friction=1.03;
 		this.scratch=false;
 		this.break=false;
 	}
@@ -22,7 +22,6 @@ class cue {
 			background(0,100,0);
 			this.break = true;
 			this.force = p5.Vector.sub(this.location,this.lineEnd);
-			//this.force.normalize();
 			this.force.mult(.03);
 			this.forceCreated=true;
 			mouseRelease = 0;
