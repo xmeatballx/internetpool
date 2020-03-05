@@ -1,3 +1,1 @@
-# project 1 moon phase challenge
-
-# internetpool
+single player internet pool game in p5js
