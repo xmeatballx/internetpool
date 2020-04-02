@@ -1,1 +1,1 @@
-single player internet pool game in p5js
+## Single player internet pool game using vectors in p5js
